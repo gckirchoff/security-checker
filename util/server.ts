@@ -29,6 +29,6 @@ export const predict = async (code: string, lang: string): Promise<string> => {
     return textResponse;
   } catch (error) {
     console.log(error);
-    return error.message;
+    return 'Internal server error';
   }
 };
