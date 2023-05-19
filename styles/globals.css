@@ -67,12 +67,6 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 .highlight-error {
   background-color: rgba(249, 100, 97, 0.3) !important;
 }
