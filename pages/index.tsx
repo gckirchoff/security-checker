@@ -22,7 +22,7 @@ export default function Home() {
     if (cmContent) {
       const lines = Array.from(cmContent.children);
       const erroredLines =
-        prediction.match(/(?<=Line )(\d.)/g)?.map((line) => Number(line) - 1) ??
+        prediction.match(/(?<=Line )([0-9]+)/g)?.map((line) => Number(line) - 1) ??
         [];
       lines.forEach((child, index) => {
         if (erroredLines.includes(index)) {
